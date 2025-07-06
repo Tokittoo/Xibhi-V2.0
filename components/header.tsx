@@ -9,10 +9,9 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    { href: "#about", label: "About" },
+    { href: "#HallofFames", label: "Hall of Fame" },
     { href: "#skills", label: "Skills" },
-    { href: "#services", label: "Services" },
-    { href: "#portfolio", label: "Portfolio" },
+    { href: "#About", label: "What I Do" },
     { href: "#contact", label: "Contact" },
   ]
 
@@ -20,10 +19,9 @@ export function Header() {
     <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <Shield className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold">SecureOps</span>
-          </div>
+          <a href="#" className="flex items-center space-x-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <span className="text-3xl font-bold">Sibhi</span>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">

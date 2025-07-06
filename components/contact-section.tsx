@@ -7,10 +7,10 @@ import { Mail, Phone, MapPin, Linkedin, Github, Twitter, Send, Clock, Shield } f
 
 export function ContactSection() {
   return (
-    <section id="contact" className="py-16 px-4 bg-muted/50">
+    <section id="contact" className="py-16 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Me</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Ready to strengthen your security posture? Let's discuss your cybersecurity needs and how I can help protect
             your organization.
@@ -91,15 +91,7 @@ export function ContactSection() {
               </CardContent>
             </Card>
 
-            <div className="space-y-3">
-              <h4 className="font-semibold">Availability</h4>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">Penetration Testing</Badge>
-                <Badge variant="secondary">Security Consulting</Badge>
-                <Badge variant="secondary">Training</Badge>
-                <Badge variant="outline">Long-term Contracts</Badge>
-              </div>
-            </div>
+            
           </div>
 
           {/* Contact Form */}
