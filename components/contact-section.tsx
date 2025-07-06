@@ -1,9 +1,20 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Badge } from "@/components/ui/badge"
-import { Mail, Phone, MapPin, Linkedin, Github, Twitter, Send, Clock, Shield } from "lucide-react"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Badge } from "@/components/ui/badge";
+import {
+  Mail,
+  MessageCircle,
+  MapPin,
+  Linkedin,
+  Github,
+  Twitter,
+  Calendar,
+  Send,
+  Clock,
+  Shield,
+} from "lucide-react";
 
 export function ContactSection() {
   return (
@@ -11,10 +22,6 @@ export function ContactSection() {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Me</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Ready to strengthen your security posture? Let's discuss your cybersecurity needs and how I can help protect
-            your organization.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -32,31 +39,17 @@ export function ContactSection() {
                   <Mail className="h-5 w-5 text-muted-foreground" />
                   <div>
                     <div className="font-medium">Email</div>
-                    <div className="text-sm text-muted-foreground">security@example.com</div>
+                    <div className="text-sm text-muted-foreground">
+                      sibhi.b@proton.me
+                    </div>
                   </div>
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <Phone className="h-5 w-5 text-muted-foreground" />
+                  <MessageCircle className="h-5 w-5 text-muted-foreground" />
                   <div>
-                    <div className="font-medium">Phone</div>
-                    <div className="text-sm text-muted-foreground">+1 (555) 123-4567</div>
-                  </div>
-                </div>
-
-                <div className="flex items-center space-x-3">
-                  <MapPin className="h-5 w-5 text-muted-foreground" />
-                  <div>
-                    <div className="font-medium">Location</div>
-                    <div className="text-sm text-muted-foreground">Remote / Global</div>
-                  </div>
-                </div>
-
-                <div className="flex items-center space-x-3">
-                  <Clock className="h-5 w-5 text-muted-foreground" />
-                  <div>
-                    <div className="font-medium">Response Time</div>
-                    <div className="text-sm text-muted-foreground">Within 24 hours</div>
+                    <div className="font-medium">Telegram</div>
+                    <div className="text-sm text-muted-foreground">@XIBHl</div>
                   </div>
                 </div>
               </CardContent>
@@ -70,28 +63,61 @@ export function ContactSection() {
                 <Button
                   variant="outline"
                   className="w-full justify-start bg-transparent hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
+                  asChild
                 >
-                  <Linkedin className="h-4 w-4 mr-2" />
-                  LinkedIn Profile
+                  <a
+                    href="https://www.linkedin.com/in/sibhibalamurugan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Linkedin className="h-4 w-4 mr-2" />
+                    LinkedIn Profile
+                  </a>
                 </Button>
                 <Button
                   variant="outline"
                   className="w-full justify-start bg-transparent hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
+                  asChild
                 >
-                  <Github className="h-4 w-4 mr-2" />
-                  GitHub Portfolio
+                  <a
+                    href="https://github.com/xibhi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="h-4 w-4 mr-2" />
+                    GitHub Portfolio
+                  </a>
                 </Button>
                 <Button
                   variant="outline"
                   className="w-full justify-start bg-transparent hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
+                  asChild
                 >
-                  <Twitter className="h-4 w-4 mr-2" />
-                  Security Research
+                  <a
+                    href="https://www.x.com/xibhi_"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Twitter className="h-4 w-4 mr-2" />
+                    Security Research
+                  </a>
+                </Button>
+                <Button
+                  variant="outline"
+                  className="w-full justify-start bg-transparent hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
+                  asChild
+                >
+                  <a
+                    href="https://cal.com/xibhi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Calendar className="h-4 w-4 mr-2" />
+                    Schedule Meeting
+                  </a>
                 </Button>
               </CardContent>
             </Card>
-
-            
           </div>
 
           {/* Contact Form */}
@@ -113,7 +139,11 @@ export function ContactSection() {
                       <label htmlFor="email" className="text-sm font-medium">
                         Email Address
                       </label>
-                      <Input id="email" type="email" placeholder="your.email@company.com" />
+                      <Input
+                        id="email"
+                        type="email"
+                        placeholder="your.email@company.com"
+                      />
                     </div>
                   </div>
 
@@ -128,7 +158,10 @@ export function ContactSection() {
                       <label htmlFor="service" className="text-sm font-medium">
                         Service Needed
                       </label>
-                      <Input id="service" placeholder="e.g., Penetration Testing" />
+                      <Input
+                        id="service"
+                        placeholder="e.g., Penetration Testing"
+                      />
                     </div>
                   </div>
 
@@ -145,8 +178,12 @@ export function ContactSection() {
 
                   <div className="flex items-center space-x-2">
                     <input type="checkbox" id="nda" className="rounded" />
-                    <label htmlFor="nda" className="text-sm text-muted-foreground">
-                      I'm willing to sign an NDA for sensitive project discussions
+                    <label
+                      htmlFor="nda"
+                      className="text-sm text-muted-foreground"
+                    >
+                      I'm willing to sign an NDA for sensitive project
+                      discussions
                     </label>
                   </div>
 
@@ -161,5 +198,5 @@ export function ContactSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

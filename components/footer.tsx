@@ -1,4 +1,4 @@
-import { Linkedin, Github, Twitter, Mail } from "lucide-react"
+import { Linkedin, Github, Twitter, Instagram } from "lucide-react";
 
 export function Footer() {
   return (
@@ -10,18 +10,47 @@ export function Footer() {
               <span className="text-2xl font-bold">Sibhi</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Professional cybersecurity services and penetration testing to protect your digital assets.
+              Professional cybersecurity services and penetration testing to
+              protect your digital assets.
             </p>
           </div>
 
           <div className="flex space-x-4">
-            <Linkedin href="https://www.linkedin.com/in/sibhibalamurugan"className="h-5 w-5 text-muted-foreground hover:text-foreground cursor-pointer" />
-            <Github href="https://www.github.com/xibhi"className="h-5 w-5 text-muted-foreground hover:text-foreground cursor-pointer" />
-            <Twitter href="https://www.x.com/xibhi_" className="h-5 w-5 text-muted-foreground hover:text-foreground cursor-pointer" />
-            <Mail className="h-5 w-5 text-muted-foreground hover:text-foreground cursor-pointer" />
+            <a
+              href="https://www.linkedin.com/in/sibhibalamurugan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Linkedin className="h-5 w-5" />
+            </a>
+            <a
+              href="https://github.com/xibhi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Github className="h-5 w-5" />
+            </a>
+            <a
+              href="https://www.x.com/xibhi_"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Twitter className="h-5 w-5" />
+            </a>
+            <a
+              href="https://www.instagram.com/_xibhi_"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Instagram className="h-5 w-5" />
+            </a>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
